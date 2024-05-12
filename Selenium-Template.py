@@ -12,11 +12,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.proxy import Proxy, ProxyType
-from webdriver_manager.chrome import ChromeDriverManager
+import chromedriver_autoinstaller
 # from pyvirtualdisplay import Display
 # display = Display(visible=0, size=(800, 800))  
 # display.start()
 
+chromedriver_autoinstaller.install() 
 chrome_options = webdriver.ChromeOptions()    
 # Add your options as needed    
 options = [
@@ -42,7 +43,7 @@ for option in options:
 PATH_TO_CHROME_DRIVER = "chromedriver.exe"
 
 service = Service(executable_path=PATH_TO_CHROME_DRIVER)
-driver = webdriver.Chrome(service=service, options=chrome_options)
+driver = webdriver.Chrome(chrome_options)
 
 # driver.get('http://github.com')
 # print(driver.title)
