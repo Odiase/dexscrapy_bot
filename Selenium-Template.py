@@ -408,3 +408,7 @@ def main():
 [{'token_name': 'APEPE\n/\nSOL', 'market_cap': 'MARKET CAP\n$1.78K', 'liquidity': 'LIQUIDITY\n$7.53', 'circ_supply': 'CIRC. SUPPLY\n100.00B', 'holders': '2.36K', 'total_market_cap': 'TOTAL MKTCAP\n$1.78K', '24h_volume': '24H VOLUME\n$34.50K', 'total_supply': 'TOTAL SUPPLY\n100.00B'}, {'token_name': 'MONKEY\n/\nSOL', 'market_cap': 'MARKET CAP\n$713.06K', 'liquidity': 'LIQUIDITY\n$98.70K', 'circ_supply': 'CIRC. SUPPLY\n420.66T', 'holders': '6.30K', 'total_market_cap': 'TOTAL MKTCAP\n$713.06K', '24h_volume': '24H VOLUME\n$817.14K', 'total_supply': 'TOTAL SUPPLY\n420.66T'}]
 main()
 
+# - name: Installing all necessary packages
+#         run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay
+#       - name: Install xvfb
+#         run: sudo apt-get install xvfb
