@@ -2,6 +2,7 @@ import time
 import requests
 
 
+import chromedriver_autoinstaller
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -17,6 +18,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 # display = Display(visible=0, size=(800, 800))  
 # display.start()
 
+chromedriver_autoinstaller.install()
 chrome_options = webdriver.ChromeOptions()    
 # Add your options as needed    
 options = [
@@ -37,8 +39,8 @@ options = [
 for option in options:
     chrome_options.add_argument(option)
 
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service, options = chrome_options)
+# service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(options=chrome_options)
 
 # driver.get('http://github.com')
 # print(driver.title)
