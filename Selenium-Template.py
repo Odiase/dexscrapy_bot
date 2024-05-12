@@ -42,7 +42,7 @@ for option in options:
 PATH_TO_CHROME_DRIVER = "chromedriver.exe"
 
 service = Service(executable_path=PATH_TO_CHROME_DRIVER)
-driver = webdriver.Chrome(service=service, options=options)
+driver = webdriver.Chrome(service=service, options=chrome_options)
 
 # driver.get('http://github.com')
 # print(driver.title)
