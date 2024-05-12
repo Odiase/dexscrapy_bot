@@ -37,8 +37,8 @@ options = [
 for option in options:
     chrome_options.add_argument(option)
 
-driver_manager = ChromeDriverManager().install()
-print("Driver MAnager : ", driver_manager)
+# driver_manager = ChromeDriverManager().install()
+# print("Driver MAnager : ", driver_manager)
 PATH_TO_CHROME_DRIVER = "chromedriver.exe"
 
 service = Service(executable_path=PATH_TO_CHROME_DRIVER)
