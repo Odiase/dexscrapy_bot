@@ -25,7 +25,7 @@ options = [
 #    "--window-size=1200,1200",
     "--ignore-certificate-errors"
  
-    #"--headless",
+    "--headless",
     #"--disable-gpu",
     #"--window-size=1920,1200",
     #"--ignore-certificate-errors",
@@ -40,10 +40,10 @@ for option in options:
 
 # driver_manager = ChromeDriverManager().install()
 # print("Driver MAnager : ", driver_manager)
-PATH_TO_CHROME_DRIVER = "chromedriver.exe"
+# PATH_TO_CHROME_DRIVER = "chromedriver.exe"
 
-service = Service(executable_path=PATH_TO_CHROME_DRIVER)
-driver = webdriver.Chrome(chrome_options)
+# service = Service(executable_path=PATH_TO_CHROME_DRIVER)
+driver = webdriver.Chrome(options=chrome_options)
 
 # driver.get('http://github.com')
 # print(driver.title)
